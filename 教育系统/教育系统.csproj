@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A485758-9740-4BCD-8BEA-23568CD3121B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>教育系统</RootNamespace>
+    <AssemblyName>教育系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademicTranscript\academic\ApplyExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ApplyExchange.Designer.cs">
+      <DependentUpon>ApplyExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\Card.Designer.cs">
+      <DependentUpon>Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ExchangeElect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ExchangeElect.Designer.cs">
+      <DependentUpon>ExchangeElect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ExchangeGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ExchangeGrade.Designer.cs">
+      <DependentUpon>ExchangeGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ProfessionalDiversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\academic\ProfessionalDiversion.Designer.cs">
+      <DependentUpon>ProfessionalDiversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\Rank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\Rank.Designer.cs">
+      <DependentUpon>Rank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\Grade\score.Designer.cs">
+      <DependentUpon>score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\annountmess\Announcement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\annountmess\Announcement.Designer.cs">
+      <DependentUpon>Announcement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\Desktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\Desktop.Designer.cs">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\weekday\Weekday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\weekday\Weekday.Designer.cs">
+      <DependentUpon>Weekday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\ClassRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\ClassRoom.Designer.cs">
+      <DependentUpon>ClassRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\ClassTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\ClassTable.Designer.cs">
+      <DependentUpon>ClassTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\EX_TABLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\EX_TABLE.Designer.cs">
+      <DependentUpon>EX_TABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\TeachTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\TeachTable.Designer.cs">
+      <DependentUpon>TeachTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\curriculum\Term.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\curriculum\Term.Designer.cs">
+      <DependentUpon>Term.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Develop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Develop.Designer.cs">
+      <DependentUpon>Develop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Option\ApplyOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Option\ApplyOption.Designer.cs">
+      <DependentUpon>ApplyOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\project\Guidance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\project\Guidance.Designer.cs">
+      <DependentUpon>Guidance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\project\ImplementationPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\project\ImplementationPlan.Designer.cs">
+      <DependentUpon>ImplementationPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\project\ViewTeachingProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\project\ViewTeachingProgress.Designer.cs">
+      <DependentUpon>ViewTeachingProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\All.Designer.cs">
+      <DependentUpon>All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\BorrowClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\BorrowClass.Designer.cs">
+      <DependentUpon>BorrowClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\Center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\Center.Designer.cs">
+      <DependentUpon>Center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\Pre_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\Pre_S.Designer.cs">
+      <DependentUpon>Pre_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\ScoreAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\ScoreAll.Designer.cs">
+      <DependentUpon>ScoreAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\SelectLEsson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\SelectLEsson.Designer.cs">
+      <DependentUpon>SelectLEsson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\TeachProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\Selectlesson\TeachProgress.Designer.cs">
+      <DependentUpon>TeachProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\TextBook\Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\TextBook\Accounts.Designer.cs">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\TextBook\SelectTextbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\TextBook\SelectTextbook.Designer.cs">
+      <DependentUpon>SelectTextbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Develop\TextBook\SolicitSubscriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Develop\TextBook\SolicitSubscriptions.Designer.cs">
+      <DependentUpon>SolicitSubscriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\information\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\information\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicTranscript\AcademicGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicTranscript\AcademicGrade.Designer.cs">
+      <DependentUpon>AcademicGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\annountmess\Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\annountmess\Message.Designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESKTOP\information\Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESKTOP\information\Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Internship\Iinfoemation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Internship\Iinfoemation.Designer.cs">
+      <DependentUpon>Iinfoemation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\NewCredit\Apply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\NewCredit\Apply.Designer.cs">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\NewCredit\Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\NewCredit\Select.Designer.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Practice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Practice.Designer.cs">
+      <DependentUpon>Practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\Experiment_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\Experiment_book.Designer.cs">
+      <DependentUpon>Experiment_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\Experiment_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\Experiment_list.Designer.cs">
+      <DependentUpon>Experiment_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\INternship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\INternship.Designer.cs">
+      <DependentUpon>INternship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\PracticeGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE\Teaching\PracticeGrade.Designer.cs">
+      <DependentUpon>PracticeGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcademicTranscript\AcademicGrade.resx">
+      <DependentUpon>AcademicGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\academic\ApplyExchange.resx">
+      <DependentUpon>ApplyExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\academic\Card.resx">
+      <DependentUpon>Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\academic\ExchangeElect.resx">
+      <DependentUpon>ExchangeElect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\academic\ExchangeGrade.resx">
+      <DependentUpon>ExchangeGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\academic\ProfessionalDiversion.resx">
+      <DependentUpon>ProfessionalDiversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\Grade\Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\Grade\Rank.resx">
+      <DependentUpon>Rank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcademicTranscript\Grade\score.resx">
+      <DependentUpon>score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\annountmess\Announcement.resx">
+      <DependentUpon>Announcement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\Desktop.resx">
+      <DependentUpon>Desktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\information\Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\weekday\Weekday.resx">
+      <DependentUpon>Weekday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Develop\Develop.resx">
+      <DependentUpon>Develop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\information\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESKTOP\annountmess\Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Internship\Iinfoemation.resx">
+      <DependentUpon>Iinfoemation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\NewCredit\Apply.resx">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\NewCredit\Select.resx">
+      <DependentUpon>Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Practice.resx">
+      <DependentUpon>Practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Teaching\Experiment_book.resx">
+      <DependentUpon>Experiment_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Teaching\Experiment_list.resx">
+      <DependentUpon>Experiment_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Teaching\INternship.resx">
+      <DependentUpon>INternship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE\Teaching\PracticeGrade.resx">
+      <DependentUpon>PracticeGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
