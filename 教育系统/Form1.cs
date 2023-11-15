@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 教育系统.ASSESS;
+using 教育系统.Develop;
+using 教育系统.Exam;
 using 教育系统.PRACTICE;
 
 namespace 教育系统
@@ -17,6 +20,9 @@ namespace 教育系统
         private AcademicGrade AcademicGrade;
         private Home Home;
         private Practice Practice;
+        private DevelopP Develop;
+        private ExamApply ExamApply;
+        private StudentAssess StudentAssess;
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +32,9 @@ namespace 教育系统
             AcademicGrade= new AcademicGrade();
             Home= new Home();
             Practice= new Practice();
+            Develop=new DevelopP();
+            ExamApply= new ExamApply();
+            StudentAssess= new StudentAssess();
             Home.TopLevel= false;
             panel1.Controls.Add(Home);
             Home.Show();
@@ -67,6 +76,30 @@ namespace 教育系统
             panel1.Controls.Clear();
             panel1.Controls.Add(Practice);
             Practice.Show();
+        }
+
+        private void MenuItem_develop_Click(object sender, EventArgs e)
+        {
+            Develop.TopLevel = false;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(Develop);
+            Develop.Show();
+        }
+
+        private void MenuItem_Exam_Click(object sender, EventArgs e)
+        {
+            ExamApply.TopLevel = false;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(ExamApply);
+            ExamApply.Show();
+        }
+
+        private void MenuItem_evaluate_Click(object sender, EventArgs e)
+        {
+            StudentAssess.TopLevel = false;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(StudentAssess);
+            StudentAssess.Show();
         }
     }
 }

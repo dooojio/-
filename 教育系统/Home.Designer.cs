@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_week = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_select = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btn_plan = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_assess = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_develop = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_grade = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btn_acc = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btn_card = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btn_apply = new System.Windows.Forms.Button();
             this.panel_all = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,120 +72,33 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(24, 28);
+            this.panel1.Location = new System.Drawing.Point(32, 35);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 258);
+            this.panel1.Size = new System.Drawing.Size(312, 322);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(24, 306);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(109, 105);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(153, 306);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(105, 104);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel4.Controls.Add(this.button11);
-            this.panel4.Location = new System.Drawing.Point(282, 28);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(106, 258);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel5.Controls.Add(this.btn_plan);
-            this.panel5.Location = new System.Drawing.Point(282, 305);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(106, 105);
-            this.panel5.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Blue;
-            this.panel6.Controls.Add(this.button8);
-            this.panel6.Location = new System.Drawing.Point(410, 28);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(107, 120);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panel7.Controls.Add(this.button7);
-            this.panel7.Location = new System.Drawing.Point(410, 165);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(107, 121);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.LightBlue;
-            this.panel8.Controls.Add(this.button4);
-            this.panel8.Location = new System.Drawing.Point(410, 305);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(107, 106);
-            this.panel8.TabIndex = 7;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel9.Controls.Add(this.button9);
-            this.panel9.Location = new System.Drawing.Point(539, 28);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(242, 120);
-            this.panel9.TabIndex = 8;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panel10.Controls.Add(this.button10);
-            this.panel10.Location = new System.Drawing.Point(539, 165);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(242, 121);
-            this.panel10.TabIndex = 9;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel11.Controls.Add(this.button5);
-            this.panel11.Location = new System.Drawing.Point(539, 305);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(109, 105);
-            this.panel11.TabIndex = 10;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel12.Controls.Add(this.button6);
-            this.panel12.Location = new System.Drawing.Point(672, 305);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(109, 106);
-            this.panel12.TabIndex = 11;
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 258);
+            this.button1.Size = new System.Drawing.Size(312, 322);
             this.button1.TabIndex = 0;
             this.button1.Text = "个人信息";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Location = new System.Drawing.Point(32, 382);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(145, 131);
+            this.panel2.TabIndex = 1;
             // 
             // button2
             // 
@@ -193,97 +106,167 @@
             this.button2.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(0, -1);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 106);
+            this.button2.Size = new System.Drawing.Size(145, 132);
             this.button2.TabIndex = 1;
             this.button2.Text = "课程成绩查询";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // panel3
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(-4, -1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 106);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "教学周历";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel3.Controls.Add(this.btn_week);
+            this.panel3.Location = new System.Drawing.Point(204, 382);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(140, 130);
+            this.panel3.TabIndex = 2;
+            // 
+            // btn_week
+            // 
+            this.btn_week.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_week.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_week.ForeColor = System.Drawing.Color.White;
+            this.btn_week.Location = new System.Drawing.Point(-5, -1);
+            this.btn_week.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_week.Name = "btn_week";
+            this.btn_week.Size = new System.Drawing.Size(145, 132);
+            this.btn_week.TabIndex = 2;
+            this.btn_week.Text = "教学周历";
+            this.btn_week.UseVisualStyleBackColor = true;
+            this.btn_week.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel4.Controls.Add(this.btn_select);
+            this.panel4.Location = new System.Drawing.Point(376, 35);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(141, 322);
+            this.panel4.TabIndex = 3;
+            // 
+            // btn_select
+            // 
+            this.btn_select.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_select.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_select.ForeColor = System.Drawing.Color.White;
+            this.btn_select.Location = new System.Drawing.Point(-9, -4);
+            this.btn_select.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(151, 326);
+            this.btn_select.TabIndex = 11;
+            this.btn_select.Text = "选课中心";
+            this.btn_select.UseVisualStyleBackColor = true;
+            this.btn_select.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel5.Controls.Add(this.btn_plan);
+            this.panel5.Location = new System.Drawing.Point(376, 381);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(141, 131);
+            this.panel5.TabIndex = 4;
             // 
             // btn_plan
             // 
             this.btn_plan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_plan.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_plan.ForeColor = System.Drawing.Color.White;
-            this.btn_plan.Location = new System.Drawing.Point(-3, -1);
+            this.btn_plan.Location = new System.Drawing.Point(-4, -1);
+            this.btn_plan.Margin = new System.Windows.Forms.Padding(4);
             this.btn_plan.Name = "btn_plan";
-            this.btn_plan.Size = new System.Drawing.Size(109, 106);
+            this.btn_plan.Size = new System.Drawing.Size(145, 132);
             this.btn_plan.TabIndex = 3;
             this.btn_plan.Text = "授课计划查询";
             this.btn_plan.UseVisualStyleBackColor = true;
+            this.btn_plan.Click += new System.EventHandler(this.btn_plan_Click);
             // 
-            // button4
+            // panel6
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(-2, -3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 106);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "考试成绩";
-            this.button4.UseVisualStyleBackColor = true;
+            this.panel6.BackColor = System.Drawing.Color.Blue;
+            this.panel6.Controls.Add(this.btn_assess);
+            this.panel6.Location = new System.Drawing.Point(547, 35);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(143, 150);
+            this.panel6.TabIndex = 5;
             // 
-            // button5
+            // btn_assess
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(-3, -1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 106);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "学籍卡片";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_assess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_assess.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_assess.ForeColor = System.Drawing.Color.White;
+            this.btn_assess.Location = new System.Drawing.Point(-3, 0);
+            this.btn_assess.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_assess.Name = "btn_assess";
+            this.btn_assess.Size = new System.Drawing.Size(145, 150);
+            this.btn_assess.TabIndex = 8;
+            this.btn_assess.Text = "学生评教";
+            this.btn_assess.UseVisualStyleBackColor = true;
+            this.btn_assess.Click += new System.EventHandler(this.btn_assess_Click);
             // 
-            // button6
+            // panel7
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 106);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "社会考试报名";
-            this.button6.UseVisualStyleBackColor = true;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel7.Controls.Add(this.btn_develop);
+            this.panel7.Location = new System.Drawing.Point(547, 206);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(143, 151);
+            this.panel7.TabIndex = 6;
             // 
-            // button7
+            // btn_develop
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(-2, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 121);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "培养方案";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_develop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_develop.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_develop.ForeColor = System.Drawing.Color.White;
+            this.btn_develop.Location = new System.Drawing.Point(-3, 0);
+            this.btn_develop.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_develop.Name = "btn_develop";
+            this.btn_develop.Size = new System.Drawing.Size(145, 151);
+            this.btn_develop.TabIndex = 7;
+            this.btn_develop.Text = "培养方案";
+            this.btn_develop.UseVisualStyleBackColor = true;
+            this.btn_develop.Click += new System.EventHandler(this.btn_develop_Click);
             // 
-            // button8
+            // panel8
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(-2, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 120);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "学生评教";
-            this.button8.UseVisualStyleBackColor = true;
+            this.panel8.BackColor = System.Drawing.Color.LightBlue;
+            this.panel8.Controls.Add(this.btn_grade);
+            this.panel8.Location = new System.Drawing.Point(547, 381);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(143, 132);
+            this.panel8.TabIndex = 7;
+            // 
+            // btn_grade
+            // 
+            this.btn_grade.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_grade.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_grade.ForeColor = System.Drawing.Color.White;
+            this.btn_grade.Location = new System.Drawing.Point(-3, -4);
+            this.btn_grade.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_grade.Name = "btn_grade";
+            this.btn_grade.Size = new System.Drawing.Size(145, 132);
+            this.btn_grade.TabIndex = 4;
+            this.btn_grade.Text = "考试成绩";
+            this.btn_grade.UseVisualStyleBackColor = true;
+            this.btn_grade.Click += new System.EventHandler(this.btn_grade_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel9.Controls.Add(this.button9);
+            this.panel9.Location = new System.Drawing.Point(719, 35);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(323, 150);
+            this.panel9.TabIndex = 8;
             // 
             // button9
             // 
@@ -291,39 +274,87 @@
             this.button9.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(242, 120);
+            this.button9.Size = new System.Drawing.Size(323, 150);
             this.button9.TabIndex = 9;
             this.button9.Text = "已收留言";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // panel10
             // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(242, 120);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "已收公告";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel10.Controls.Add(this.btn_acc);
+            this.panel10.Location = new System.Drawing.Point(719, 206);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(323, 151);
+            this.panel10.TabIndex = 9;
             // 
-            // button11
+            // btn_acc
             // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(-7, -3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(113, 261);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "选课中心";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btn_acc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_acc.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_acc.ForeColor = System.Drawing.Color.White;
+            this.btn_acc.Location = new System.Drawing.Point(0, 0);
+            this.btn_acc.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_acc.Name = "btn_acc";
+            this.btn_acc.Size = new System.Drawing.Size(323, 150);
+            this.btn_acc.TabIndex = 10;
+            this.btn_acc.Text = "已收公告";
+            this.btn_acc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_acc.UseVisualStyleBackColor = true;
+            this.btn_acc.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel11.Controls.Add(this.btn_card);
+            this.panel11.Location = new System.Drawing.Point(719, 381);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(145, 131);
+            this.panel11.TabIndex = 10;
+            // 
+            // btn_card
+            // 
+            this.btn_card.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_card.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_card.ForeColor = System.Drawing.Color.White;
+            this.btn_card.Location = new System.Drawing.Point(-4, -1);
+            this.btn_card.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_card.Name = "btn_card";
+            this.btn_card.Size = new System.Drawing.Size(145, 132);
+            this.btn_card.TabIndex = 5;
+            this.btn_card.Text = "学籍卡片";
+            this.btn_card.UseVisualStyleBackColor = true;
+            this.btn_card.Click += new System.EventHandler(this.btn_card_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel12.Controls.Add(this.btn_apply);
+            this.panel12.Location = new System.Drawing.Point(896, 381);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(145, 132);
+            this.panel12.TabIndex = 11;
+            // 
+            // btn_apply
+            // 
+            this.btn_apply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_apply.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_apply.ForeColor = System.Drawing.Color.White;
+            this.btn_apply.Location = new System.Drawing.Point(0, 0);
+            this.btn_apply.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_apply.Name = "btn_apply";
+            this.btn_apply.Size = new System.Drawing.Size(145, 132);
+            this.btn_apply.TabIndex = 6;
+            this.btn_apply.Text = "社会考试报名";
+            this.btn_apply.UseVisualStyleBackColor = true;
+            this.btn_apply.Click += new System.EventHandler(this.btn_apply_Click);
             // 
             // panel_all
             // 
@@ -339,18 +370,20 @@
             this.panel_all.Controls.Add(this.panel3);
             this.panel_all.Controls.Add(this.panel2);
             this.panel_all.Controls.Add(this.panel1);
-            this.panel_all.Location = new System.Drawing.Point(7, 1);
+            this.panel_all.Location = new System.Drawing.Point(9, 1);
+            this.panel_all.Margin = new System.Windows.Forms.Padding(4);
             this.panel_all.Name = "panel_all";
-            this.panel_all.Size = new System.Drawing.Size(795, 450);
+            this.panel_all.Size = new System.Drawing.Size(1060, 562);
             this.panel_all.TabIndex = 12;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.panel_all);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.Text = "Home";
             this.panel1.ResumeLayout(false);
@@ -386,16 +419,16 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btn_week;
+        private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.Button btn_plan;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_assess;
+        private System.Windows.Forms.Button btn_develop;
+        private System.Windows.Forms.Button btn_grade;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_acc;
+        private System.Windows.Forms.Button btn_card;
+        private System.Windows.Forms.Button btn_apply;
         private System.Windows.Forms.Panel panel_all;
     }
 }

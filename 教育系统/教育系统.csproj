@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>教育系统</RootNamespace>
     <AssemblyName>教育系统</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +34,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.0\lib\net461\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartLinli.DatabaseDevelopement.DbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SmartLinli.DatabaseDevelopement.DbHelper.0.0.50-alpha\lib\net472\SmartLinli.DatabaseDevelopement.DbHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +129,18 @@
     <Compile Include="AcademicTranscript\Grade\score.Designer.cs">
       <DependentUpon>score.cs</DependentUpon>
     </Compile>
+    <Compile Include="ASSESS\StudentAssess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESS\StudentAssess.Designer.cs">
+      <DependentUpon>StudentAssess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Center.Designer.cs">
+      <DependentUpon>Center.cs</DependentUpon>
+    </Compile>
     <Compile Include="DESKTOP\annountmess\Announcement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,131 +159,209 @@
     <Compile Include="DESKTOP\weekday\Weekday.Designer.cs">
       <DependentUpon>Weekday.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\ClassRoom.cs">
+    <Compile Include="DEvelop\curriculum\ClassRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\ClassRoom.Designer.cs">
+    <Compile Include="DEvelop\curriculum\ClassRoom.Designer.cs">
       <DependentUpon>ClassRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\ClassTable.cs">
+    <Compile Include="DEvelop\curriculum\ClassTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\ClassTable.Designer.cs">
+    <Compile Include="DEvelop\curriculum\ClassTable.Designer.cs">
       <DependentUpon>ClassTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\Course.cs">
+    <Compile Include="DEvelop\curriculum\Course.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\Course.Designer.cs">
+    <Compile Include="DEvelop\curriculum\Course.Designer.cs">
       <DependentUpon>Course.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\EX_TABLE.cs">
+    <Compile Include="DEvelop\curriculum\EX_TABLE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\EX_TABLE.Designer.cs">
+    <Compile Include="DEvelop\curriculum\EX_TABLE.Designer.cs">
       <DependentUpon>EX_TABLE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\TeachTable.cs">
+    <Compile Include="DEvelop\curriculum\TeachTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\TeachTable.Designer.cs">
+    <Compile Include="DEvelop\curriculum\TeachTable.Designer.cs">
       <DependentUpon>TeachTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\curriculum\Term.cs">
+    <Compile Include="DEvelop\curriculum\Term.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\curriculum\Term.Designer.cs">
+    <Compile Include="DEvelop\curriculum\Term.Designer.cs">
       <DependentUpon>Term.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Develop.cs">
+    <Compile Include="DEvelop\DevelopP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Develop.Designer.cs">
-      <DependentUpon>Develop.cs</DependentUpon>
+    <Compile Include="DEvelop\DevelopP.Designer.cs">
+      <DependentUpon>DevelopP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Option\ApplyOption.cs">
+    <Compile Include="DEvelop\Option\ApplyOption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Option\ApplyOption.Designer.cs">
+    <Compile Include="DEvelop\Option\ApplyOption.Designer.cs">
       <DependentUpon>ApplyOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\project\Guidance.cs">
+    <Compile Include="DEvelop\project\Guidance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\project\Guidance.Designer.cs">
+    <Compile Include="DEvelop\project\Guidance.Designer.cs">
       <DependentUpon>Guidance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\project\ImplementationPlan.cs">
+    <Compile Include="DEvelop\project\ImplementationPlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\project\ImplementationPlan.Designer.cs">
+    <Compile Include="DEvelop\project\ImplementationPlan.Designer.cs">
       <DependentUpon>ImplementationPlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\project\ViewTeachingProgress.cs">
+    <Compile Include="DEvelop\project\ViewTeachingProgress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\project\ViewTeachingProgress.Designer.cs">
+    <Compile Include="DEvelop\project\ViewTeachingProgress.Designer.cs">
       <DependentUpon>ViewTeachingProgress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\All.cs">
+    <Compile Include="DEvelop\Selectlesson\All.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\All.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\All.Designer.cs">
       <DependentUpon>All.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\BorrowClass.cs">
+    <Compile Include="DEvelop\Selectlesson\BorrowClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\BorrowClass.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\BorrowClass.Designer.cs">
       <DependentUpon>BorrowClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\Center.cs">
+    <Compile Include="DEvelop\Selectlesson\Center.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\Center.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\Center.Designer.cs">
       <DependentUpon>Center.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\Pre_S.cs">
+    <Compile Include="DEvelop\Selectlesson\Pre_S.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\Pre_S.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\Pre_S.Designer.cs">
       <DependentUpon>Pre_S.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\ScoreAll.cs">
+    <Compile Include="DEvelop\Selectlesson\ScoreAll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\ScoreAll.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\ScoreAll.Designer.cs">
       <DependentUpon>ScoreAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\SelectLEsson.cs">
+    <Compile Include="DEvelop\Selectlesson\SelectLEsson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\SelectLEsson.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\SelectLEsson.Designer.cs">
       <DependentUpon>SelectLEsson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\Selectlesson\TeachProgress.cs">
+    <Compile Include="DEvelop\Selectlesson\TeachProgress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\Selectlesson\TeachProgress.Designer.cs">
+    <Compile Include="DEvelop\Selectlesson\TeachProgress.Designer.cs">
       <DependentUpon>TeachProgress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\TextBook\Accounts.cs">
+    <Compile Include="DEvelop\TextBook\Accounts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\TextBook\Accounts.Designer.cs">
+    <Compile Include="DEvelop\TextBook\Accounts.Designer.cs">
       <DependentUpon>Accounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\TextBook\SelectTextbook.cs">
+    <Compile Include="DEvelop\TextBook\SelectTextbook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\TextBook\SelectTextbook.Designer.cs">
+    <Compile Include="DEvelop\TextBook\SelectTextbook.Designer.cs">
       <DependentUpon>SelectTextbook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Develop\TextBook\SolicitSubscriptions.cs">
+    <Compile Include="DEvelop\TextBook\SolicitSubscriptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Develop\TextBook\SolicitSubscriptions.Designer.cs">
+    <Compile Include="DEvelop\TextBook\SolicitSubscriptions.Designer.cs">
       <DependentUpon>SolicitSubscriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\ExamApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\ExamApply.Designer.cs">
+      <DependentUpon>ExamApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Grade\Clear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Grade\Clear.Designer.cs">
+      <DependentUpon>Clear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Grade\Makeup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Grade\Makeup.Designer.cs">
+      <DependentUpon>Makeup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Grade\MakeUpApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Grade\MakeUpApply.Designer.cs">
+      <DependentUpon>MakeUpApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Grade\Social.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Grade\Social.Designer.cs">
+      <DependentUpon>Social.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Graduation\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Graduation\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Graduation\SelectQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\Graduation\SelectQuestion.Designer.cs">
+      <DependentUpon>SelectQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myApply\Delay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myApply\Delay.Designer.cs">
+      <DependentUpon>Delay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myApply\EXception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myApply\EXception.Designer.cs">
+      <DependentUpon>EXception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myApply\Exemption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myApply\Exemption.Designer.cs">
+      <DependentUpon>Exemption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myExam\ArrangeForExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myExam\ArrangeForExam.Designer.cs">
+      <DependentUpon>ArrangeForExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myExam\MiddleExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myExam\MiddleExam.Designer.cs">
+      <DependentUpon>MiddleExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\myExam\PreExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\myExam\PreExam.Designer.cs">
+      <DependentUpon>PreExam.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -330,6 +455,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AcademicTranscript\AcademicGrade.resx">
       <DependentUpon>AcademicGrade.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +488,12 @@
     <EmbeddedResource Include="AcademicTranscript\Grade\score.resx">
       <DependentUpon>score.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ASSESS\StudentAssess.resx">
+      <DependentUpon>StudentAssess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Center.resx">
+      <DependentUpon>Center.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DESKTOP\annountmess\Announcement.resx">
       <DependentUpon>Announcement.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,8 +506,107 @@
     <EmbeddedResource Include="DESKTOP\weekday\Weekday.resx">
       <DependentUpon>Weekday.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Develop\Develop.resx">
-      <DependentUpon>Develop.cs</DependentUpon>
+    <EmbeddedResource Include="DEvelop\curriculum\ClassRoom.resx">
+      <DependentUpon>ClassRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\curriculum\ClassTable.resx">
+      <DependentUpon>ClassTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\curriculum\Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\curriculum\EX_TABLE.resx">
+      <DependentUpon>EX_TABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\curriculum\TeachTable.resx">
+      <DependentUpon>TeachTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\curriculum\Term.resx">
+      <DependentUpon>Term.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\DevelopP.resx">
+      <DependentUpon>DevelopP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Option\ApplyOption.resx">
+      <DependentUpon>ApplyOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\project\Guidance.resx">
+      <DependentUpon>Guidance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\project\ImplementationPlan.resx">
+      <DependentUpon>ImplementationPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\project\ViewTeachingProgress.resx">
+      <DependentUpon>ViewTeachingProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\All.resx">
+      <DependentUpon>All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\BorrowClass.resx">
+      <DependentUpon>BorrowClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\Center.resx">
+      <DependentUpon>Center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\Pre_S.resx">
+      <DependentUpon>Pre_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\ScoreAll.resx">
+      <DependentUpon>ScoreAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\SelectLEsson.resx">
+      <DependentUpon>SelectLEsson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\Selectlesson\TeachProgress.resx">
+      <DependentUpon>TeachProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\TextBook\Accounts.resx">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\TextBook\SelectTextbook.resx">
+      <DependentUpon>SelectTextbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEvelop\TextBook\SolicitSubscriptions.resx">
+      <DependentUpon>SolicitSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\ExamApply.resx">
+      <DependentUpon>ExamApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Grade\Clear.resx">
+      <DependentUpon>Clear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Grade\Makeup.resx">
+      <DependentUpon>Makeup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Grade\MakeUpApply.resx">
+      <DependentUpon>MakeUpApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Grade\Social.resx">
+      <DependentUpon>Social.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Graduation\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\Graduation\SelectQuestion.resx">
+      <DependentUpon>SelectQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myApply\Delay.resx">
+      <DependentUpon>Delay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myApply\EXception.resx">
+      <DependentUpon>EXception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myApply\Exemption.resx">
+      <DependentUpon>Exemption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myExam\ArrangeForExam.resx">
+      <DependentUpon>ArrangeForExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myExam\MiddleExam.resx">
+      <DependentUpon>MiddleExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\myExam\PreExam.resx">
+      <DependentUpon>PreExam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -419,7 +655,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

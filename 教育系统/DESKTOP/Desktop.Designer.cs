@@ -53,9 +53,10 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(169, 0);
+            this.panel1.Location = new System.Drawing.Point(225, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(681, 511);
+            this.panel1.Size = new System.Drawing.Size(908, 639);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -67,16 +68,18 @@
             this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(172, 467);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(229, 584);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(169, 58);
+            this.panel2.Size = new System.Drawing.Size(225, 72);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -84,7 +87,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(43, 18);
+            this.label1.Location = new System.Drawing.Point(57, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 0;
@@ -93,27 +97,30 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.listBox1);
-            this.panel3.Location = new System.Drawing.Point(3, 67);
+            this.panel3.Location = new System.Drawing.Point(4, 84);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(169, 67);
+            this.panel3.Size = new System.Drawing.Size(225, 84);
             this.panel3.TabIndex = 1;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(40, 8);
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(53, 10);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(91, 52);
+            this.listBox1.Size = new System.Drawing.Size(120, 64);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(3, 140);
+            this.panel4.Location = new System.Drawing.Point(4, 176);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(169, 62);
+            this.panel4.Size = new System.Drawing.Size(225, 78);
             this.panel4.TabIndex = 2;
             // 
             // label2
@@ -121,7 +128,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(40, 21);
+            this.label2.Location = new System.Drawing.Point(53, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 1;
@@ -130,27 +138,30 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.listBox2);
-            this.panel5.Location = new System.Drawing.Point(3, 208);
+            this.panel5.Location = new System.Drawing.Point(4, 262);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(169, 67);
+            this.panel5.Size = new System.Drawing.Size(225, 84);
             this.panel5.TabIndex = 3;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 12;
-            this.listBox2.Location = new System.Drawing.Point(40, 8);
+            this.listBox2.ItemHeight = 15;
+            this.listBox2.Location = new System.Drawing.Point(53, 10);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(91, 52);
+            this.listBox2.Size = new System.Drawing.Size(120, 64);
             this.listBox2.TabIndex = 0;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(3, 281);
+            this.panel6.Location = new System.Drawing.Point(4, 354);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(169, 62);
+            this.panel6.Size = new System.Drawing.Size(225, 78);
             this.panel6.TabIndex = 4;
             // 
             // label3
@@ -158,7 +169,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(40, 21);
+            this.label3.Location = new System.Drawing.Point(53, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 1;
@@ -167,30 +179,33 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.listBox3);
-            this.panel7.Location = new System.Drawing.Point(3, 349);
+            this.panel7.Location = new System.Drawing.Point(4, 440);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(169, 67);
+            this.panel7.Size = new System.Drawing.Size(225, 84);
             this.panel7.TabIndex = 5;
             // 
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 12;
-            this.listBox3.Location = new System.Drawing.Point(40, 8);
+            this.listBox3.ItemHeight = 15;
+            this.listBox3.Location = new System.Drawing.Point(53, 10);
+            this.listBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(91, 52);
+            this.listBox3.Size = new System.Drawing.Size(120, 64);
             this.listBox3.TabIndex = 0;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
             // Desktop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(663, 468);
+            this.ClientSize = new System.Drawing.Size(884, 585);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Desktop";
             this.Text = "desktop";
             this.Load += new System.EventHandler(this.Desktop_Load);

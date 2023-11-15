@@ -33,9 +33,9 @@
             this.MenuItem_desktop = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItem_academicgrade = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItem_develop = new System.Windows.Forms.ToolStripMenuItem();
-            this.考试报名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItem_Exam = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItem_practice = new System.Windows.Forms.ToolStripMenuItem();
-            this.教学评价ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItem_evaluate = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItem_main = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -54,9 +54,9 @@
             this.MenuItem_desktop,
             this.MenuItem_academicgrade,
             this.MenuItem_develop,
-            this.考试报名ToolStripMenuItem,
+            this.MenuItem_Exam,
             this.MenuItem_practice,
-            this.教学评价ToolStripMenuItem,
+            this.MenuItem_evaluate,
             this.MenuItem_main});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -84,12 +84,14 @@
             this.MenuItem_develop.Name = "MenuItem_develop";
             this.MenuItem_develop.Size = new System.Drawing.Size(83, 24);
             this.MenuItem_develop.Text = "培养管理";
+            this.MenuItem_develop.Click += new System.EventHandler(this.MenuItem_develop_Click);
             // 
-            // 考试报名ToolStripMenuItem
+            // MenuItem_Exam
             // 
-            this.考试报名ToolStripMenuItem.Name = "考试报名ToolStripMenuItem";
-            this.考试报名ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.考试报名ToolStripMenuItem.Text = "考试报名";
+            this.MenuItem_Exam.Name = "MenuItem_Exam";
+            this.MenuItem_Exam.Size = new System.Drawing.Size(83, 24);
+            this.MenuItem_Exam.Text = "考试报名";
+            this.MenuItem_Exam.Click += new System.EventHandler(this.MenuItem_Exam_Click);
             // 
             // MenuItem_practice
             // 
@@ -98,11 +100,12 @@
             this.MenuItem_practice.Text = "实践环节";
             this.MenuItem_practice.Click += new System.EventHandler(this.MenuItem_practice_Click);
             // 
-            // 教学评价ToolStripMenuItem
+            // MenuItem_evaluate
             // 
-            this.教学评价ToolStripMenuItem.Name = "教学评价ToolStripMenuItem";
-            this.教学评价ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.教学评价ToolStripMenuItem.Text = "教学评价";
+            this.MenuItem_evaluate.Name = "MenuItem_evaluate";
+            this.MenuItem_evaluate.Size = new System.Drawing.Size(83, 24);
+            this.MenuItem_evaluate.Text = "教学评价";
+            this.MenuItem_evaluate.Click += new System.EventHandler(this.MenuItem_evaluate_Click);
             // 
             // MenuItem_main
             // 
@@ -151,7 +154,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(0, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1111, 619);
             this.panel1.TabIndex = 3;
@@ -183,9 +186,9 @@
         private System.Windows.Forms.ToolStripMenuItem MenuItem_desktop;
         private System.Windows.Forms.ToolStripMenuItem MenuItem_academicgrade;
         private System.Windows.Forms.ToolStripMenuItem MenuItem_develop;
-        private System.Windows.Forms.ToolStripMenuItem 考试报名ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuItem_Exam;
         private System.Windows.Forms.ToolStripMenuItem MenuItem_practice;
-        private System.Windows.Forms.ToolStripMenuItem 教学评价ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuItem_evaluate;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;

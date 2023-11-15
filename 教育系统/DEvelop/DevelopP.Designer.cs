@@ -1,6 +1,6 @@
 ﻿namespace 教育系统.Develop
 {
-    partial class Develop
+    partial class DevelopP
     {
         /// <summary>
         /// Required designer variable.
